@@ -30,3 +30,9 @@ console.log(`Even numbers in array ${array}: ${even_array}`);
 
 //Formatear precios con puntos
 monto.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+
+//Para recorrer un objeto por todas sus key
+//Puede usarse para validación de datos
+for (const prop in array) {
+	console.log(`key.${prop} = ${array[prop]}`);
+}
