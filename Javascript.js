@@ -36,3 +36,16 @@ monto.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 for (const prop in array) {
 	console.log(`key.${prop} = ${array[prop]}`);
 }
+
+//Declarar una funcion dentro del objeto, esto sirve cuando tienes una función chiquita que quieres usar dentro
+//de tu función expresiva
+
+let objeto = {
+	//Tal vez aqui se podría referenciar a la misma (?)
+	//this.function(valorAPasar);
+	
+	//funcion dentro de objeto
+	function : (parametros) => {
+	
+	}
+}
