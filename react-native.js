@@ -9,3 +9,6 @@ source $HOME/.bash_profile
 sudo lsof -i :8081
 kill -9 ID_SHOWN_FROM_PREVIOUS_CMD  //previous cmd no funcionaría. pero el en caso anterior ya funcionó
 
+// Limpiar la caché de android
+cd android
+./gradlew clean
