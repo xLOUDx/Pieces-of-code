@@ -49,3 +49,12 @@ let objeto = {
 	
 	}
 }
+
+//Cuando tienes un array de objetos con nombres y quieres mapear usa esto
+//Ejemplo: 
+//const array = [
+//nombre1: { id: 1, nombre: 'Joaquin' },
+//nombre2: { id: 2, nombre: 'Alejandro' },
+//]
+
+Object.keys(array).map(element => { ... });
