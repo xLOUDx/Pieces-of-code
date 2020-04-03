@@ -58,3 +58,19 @@ let objeto = {
 //]
 
 Object.keys(array).map(element => { ... });
+				   
+/* Group by something */			   
+/** Group procedures by category */
+ const groupedProcedimientos = procedimientos.reduce((acc: any, element: any) => {
+ 	const key = element.descripcion_categoria;
+ 	const procedimiento = {
+ 		id: element.id,
+ 		description: element.description,
+ 		modo: element.modo,
+ 		categoria_id: element.categoria_id
+ 	};
+
+ 	acc[key] = (acc[key] || []).concat(procedimiento);
+
+ 	return acc;
+ }, {});
